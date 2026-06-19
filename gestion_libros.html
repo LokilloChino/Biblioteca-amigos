@@ -7,14 +7,161 @@
     <link rel="stylesheet" href="gestion_libros.css">
 </head>
 <body>
-    
-<nav class="barra-nav">
-    <a href="gestion_docentes.html">Panel</a>
-    <a href="gestion_docentes.html">Gestión de Docentes</a>
-    <a href="gestion_docentes.html">Gestión de Préstamo</a>
-    <a href="gestion_docentes.html">Gestión de Devoluciones</a>
-</nav>
+    <div class="contenedor">
+        <!-- barra -->
+        <nav class="nav">
+            <div class="barra-nav">
+    <div class="icono">
+        <img src="chino imagen/persona.png" alt="">
+        <a href="gestion_docentes.html">Gestión de Docentes</a>
+    </div>
 
+    <div class="icono">
+        <img src="chino imagen/prestamos.png" alt="">
+        <a href="gestion_docentes.html">Gestión de Préstamo</a>
+    </div>
 
+    <div class="icono">
+        <img src="chino imagen/libro.png" alt="">
+        <a href="gestion_docentes.html">Gestión de Libros</a>
+    </div>
+
+    <div class="icono">
+        <img src="chino imagen/devolucion.png" alt="">
+        <a href="gestion_docentes.html">Gestión de Devoluciones</a>
+    </div>
+</div>
+        </nav>
+        <!-- titulo -->
+        <main class="main">
+            <h1>Gestion de libros</h1>
+            <div class="busqueda">
+                <button>+ Agregar libro</button>
+                <div class="search">
+                    <input type="search" placeholder="Busacar libro...">
+                </div>
+            </div>
+        </main>
+        <!-- tabla -->
+        <aside class="aside">
+            <!-- encabezado -->
+             <div class="fila">
+                <table>
+                     <tr class="fila">
+                        <td class="fila1">Codigo</td>
+                        <td class="fila2">Titulo</td>
+                        <td class="fila2">Autor</td>
+                        <td class="fila2">Categoria</td>
+                        <td class="fila2">Existencias</td>
+                        <td class="fila3">Aciones</td>
+                    </tr>
+                </table>
+             </div>
+            <div class="tabla">
+                <table class="filas">
+                    <!-- 1 -->
+                    <tr>
+                        <td>LIB001</td>
+                        <td>La odicea</td>
+                        <td>Homero</td>
+                        <td>Literarura</td>
+                        <td>
+                            <div class="espacio">
+                                <p>4</p>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="cuadros">
+                            <div class="editar">
+                                <img src="imagen-g.l/editar.png" alt="">
+                            </div>
+                            <div class="borrar">
+                                <img src="imagen-g.l/borra.png" alt="">
+                            </div>
+                            </div>
+                        </td>
+                    </tr>
+                    <!-- 2 -->
+                    <tr>
+                        <td>LIB002</td>
+                        <td>Soledad</td>
+                        <td>Gabriel G.M.</td>
+                        <td>Novela</td>
+                        <td>
+                            <div class="espacio">
+                                <p>2</p>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="cuadros">
+                            <div class="editar">
+                                <img src="imagen-g.l/editar.png" alt="">
+                            </div>
+                            <div class="borrar">
+                                <img src="imagen-g.l/borra.png" alt="">
+                            </div>
+                            </div>
+                        </td>
+                    </tr>
+                    <!-- 3 -->
+                    <tr>
+                        <td>LIB003</td>
+                        <td>el principito</td>
+                        <td>Antonie</td>
+                        <td>Infantil</td>
+                        <td>
+                            <div class="espacio">
+                                <p>6</p>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="cuadros">
+                            <div class="editar">
+                                <img src="imagen-g.l/editar.png" alt="">
+                            </div>
+                            <div class="borrar">
+                                <img src="imagen-g.l/borra.png" alt="">
+                            </div>
+                            </div>
+                        </td>
+                    </tr>
+                    <!--  -->
+                    <tr>
+                        <td>LIB004</td>
+                        <td>Historia M.</td>
+                        <td>Varios A.</td>
+                        <td>Hisrotia</td>
+                        <td>
+                            <div class="espacio">
+                                <p>3</p>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="cuadros">
+                            <div class="editar">
+                                <img src="imagen-g.l/editar.png" alt="">
+                            </div>
+                            <div class="borrar">
+                                <img src="imagen-g.l/borra.png" alt="">
+                            </div>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+
+            <!-- abajo -->
+                <p class="letra">Mostrando 4 de 25 libros</p>
+
+             <div class="numeros">
+                <div class="signo"><</div>
+                <div class="numero">1</div>
+                <div class="numero">2</div>
+                <div class="numero">3</div>
+                <div class="numero">4</div>
+                <div class="signo">></div>
+             </div>
+        </aside>
+    </div>
 </body>
 </html>
