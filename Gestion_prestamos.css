@@ -1,12 +1,273 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 body{
     background-color: #F5F5F4;
+    display: flex;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
-.barra-nav{
-    background-color: #CDB8E9;
+/*======================
+        MENU
+=======================*/
+
+.contenedor{
+    width:260px;
+    height:100vh;
+    background:#CDB8E9;
+    border-radius:0 40px 40px 0;
+    padding:30px;
+    position:fixed;
+    top:0;
+    left:0;
+}
+
+.logo{
+    display:flex;
+    align-items:center;
+    gap:15px;
+}
+
+.logo img{
+    width:70px;
+    height:70px;
+    border-radius:15px;
+}
+
+.titulo h3{
+    color:white;
+    font-size:22px;
+}
+
+nav{
+    margin-top:50px;
+}
+
+nav a{
+    display:flex;
+    align-items:center;
+    gap:15px;
+    text-decoration:none;
+    color:black;
+    padding:12px 15px;
+    border-radius:12px;
+    margin-bottom:15px;
+    transition:.3s;
+    font-size:20px;
+}
+
+nav img{
+    width:28px;
+    height:28px;
+}
+
+nav a:hover{
+    background:white;
+}
+
+/*======================
+      CONTENIDO
+=======================*/
+
+.contenedor2{
+    margin-left:260px;
+    width:calc(100% - 260px);
+    padding:40px;
+}
+
+h1{
+    font-size:35px;
+    margin-bottom:30px;
+}
+
+.contenido{
+    display:flex;
+    gap:30px;
+    align-items:flex-start;
+}
+
+h4{
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/*======================
+      FORMULARIO
+=======================*/
+
+.nuevo-prestamo{
+    background:white;
+    padding:20px;
+    border-radius:10px;
+    box-shadow:0 2px 8px rgba(0,0,0,.2);
+    width:100%;
+    max-width:420px;
+}
+
+.nuevo-prestamo h2{
+    background:#e6e6e6;
+    padding:10px;
+    border-radius:8px;
+    margin-bottom:15px;
+}
+
+.nuevo-prestamo label{
+    display:block;
+    margin-top:15px;
+}
+
+.nuevo-prestamo input,
+.nuevo-prestamo select{
+    width:100%;
+    padding:10px;
+    margin-top:5px;
+}
+
+.nuevo-prestamo button{
+    width:100%;
+    padding:12px;
+    margin-top:20px;
+    border:none;
+    background:#0d6efd;
+    color:white;
+    border-radius:8px;
+    cursor:pointer;
+    font-size:18px;
+}
+
+.nuevo-prestamo button:hover{
+    background:#0b5ed7;
+}
+
+/*======================
+        TABLA
+=======================*/
+
+.prestamos{
+    flex:1;
+    background:white;
+    padding:20px;
+    border-radius:10px;
+    box-shadow:0 2px 8px rgba(0,0,0,.2);
+    overflow-x:hidden;
+}
+
+.prestamos h2{
+    margin-bottom:20px;
+}
+
+table{
+    width:100%;
+    border-collapse:collapse;
+}
+
+th,
+td{
+    border:1px solid #ddd;
+    padding:10px;
+    text-align:center;
+}
+
+th{
+    background:#e5e5e5;
+}
+
+.activo{
+    background:#C9F7D2;
+    color:green;
+    padding:5px 10px;
+    border-radius:15px;
+}
+
+.activo2{
+    background:#FFE0B2;
+    color:#E65100;
+    padding:5px 10px;
+    border-radius:15px;
+}
+
+.ver-todos{
+    text-align:right;
+    margin-top:20px;
+}
+
+.ver-todos a{
+    text-decoration:none;
+    color:#0d6efd;
+    font-weight:bold;
+}
+
+.ver-todos a:hover{
+    text-decoration:underline;
+}
+
+/*======================
+        TABLET
+=======================*/
+
+@media(max-width:992px){
+
+    .contenedor{
+        width:220px;
+    }
+
+    .contenedor2{
+        margin-left:220px;
+        width:calc(100% - 220px);
+        padding:25px;
+    }
+
+    .contenido{
+        flex-direction:column;
+    }
+
+    .nuevo-prestamo{
+        max-width:100%;
+    }
+}
+
+/*======================
+        CELULAR
+=======================*/
+
+@media(max-width:768px){
+
+    body{
+        display:block;
+    }
+
+    .contenedor{
+        position:relative;
+        width:100%;
+        height:auto;
+        border-radius:0;
+    }
+
+    .contenedor2{
+        margin-left:0;
+        width:100%;
+        padding:20px;
+    }
+
+    .contenido{
+        flex-direction:column;
+    }
+
+    .nuevo-prestamo{
+        max-width:100%;
+    }
+
+    .prestamos{
+        width:100%;
+        overflow-x:auto;
+    }
+
+    table{
+        min-width:700px;
+    }
 }

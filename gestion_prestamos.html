@@ -8,12 +8,134 @@
 </head>
 <body>
     
-<nav class="barra-nav">
-    <a href="panel.html">Panel</a>
-    <a href="gestion_docentes.html">Gestión de Docentes</a>
-    <a href="gestion_libros.html">Gestión de libros</a>
-    <a href="gestion_dovoluciones.html">Gestión de Devoluciones</a>
-</nav>
+    
+
+    <div class="contenedor">
+
+        <div class="logo">
+                <img src="img/WhatsApp Image 2026-06-17 at 3.07.51 PM.jpeg" alt="">
+                <div class="titulo">
+            <h3>Biblioteca del Mañana</h3>
+    </div>
+    </div>
+    <nav>
+    <a href="panel.html">
+        <img src="img/home_24dp_000000_FILL0_wght400_GRAD0_opsz24 (1).png" alt="">Panel</a>
+    <a href="gestion_docentes.html">
+        <img src="img/persona.png" alt="">Gestión de Docentes</a>
+    <a href="gestion_libros.html">
+        <img src="img/libro.png" alt="">Gestión de libros</a>
+    <a href="gestion_dovoluciones.html">
+        <img src="img/devolucion.png" alt="">Gestión de Devoluciones</a>
+    </nav>
+
+    </div>
+
+    <div class="contenedor2">
+        
+        <h1>Gestión de Préstamos</h1>
+
+        <div class="contenido">
+
+            <div class="nuevo-prestamo">
+                <h2>Nuevo Préstamo</h2>
+
+                <label>Tipo de Usuario</label>
+             <select>
+                <option>Seleccione...</option>
+             </select>
+
+             <label>Usuario</label>
+             <select>
+             <option>Seleccione un usuario...</option>
+             </select>
+
+             <label>Libro</label>
+             <select>
+             <option>Seleccione un libro...</option>
+             </select>
+
+             <label>Fecha de prestamo</label>
+             <input type="date" id="fechaPrestamo">
+
+             <label>Fecha de devolución</label>
+             <input type="date" id="fechaDevolucion">
+
+             <button>Registrar prestamo</button>
+
+            </div>
+
+    <div class="prestamos">
+        <h4>Préstamos Activos</h4>
+
+        <table>
+            <thead>
+            <tr>
+                <th>Código</th>
+                <th>Usuario</th>
+                <th>Libro</th>
+                <th>F. Devolución</th>
+                <th>Estado</th>
+            </tr>
+            </thead>
+            <tbody>
+
+
+            <tr>
+                <td>PRED01</td>
+                <td>Juan Perez</td>
+                <td>La Gásea</td>
+                <td>22/06/2026</td>
+                <td><span class="activo">ACTIVO</span></td>
+            </tr>
+
+             <tr>
+                <td>PRES02</td>
+                <td>María Gonzales</td>
+                <td>El Principito</td>
+                <td>20/06/2026</td>
+                <td><span class="activo">ACTIVO</span></td>
+            </tr>
+
+             <tr>
+                <td>PRED03</td>
+                <td>Carlos Ramirez</td>
+                <td>Cien Años de Soledad</td>
+                <td>15/06/2026</td>
+                <td><span class="activo">ACTIVO</span></td>
+            </tr>
+
+             <tr>
+                <td>PRES04</td>
+                <td>Ana López</td>
+                <td>Historia de México</td>
+                <td>21/06/2026</td>
+                <td><span class="activo2">ACTIVO</span></td>
+            </tr>
+
+             <tr>
+                <td>PRED05</td>
+                <td>Luis Martinez</td>
+                <td>Matemáticas Básicas</td>
+                <td>10/06/2026</td>
+                <td><span class="activo2">ACTIVO</span></td>
+            </tr>
+        </tbody>
+     </table>
+
+     <div>
+
+        <div class="ver-todos">
+        <a href="#">Ver todos los prestamos</a>
+        </div>
+    </div>
+
+    </div>
+
+
+
+    </div>
+    </div>
 
 
 </body>
