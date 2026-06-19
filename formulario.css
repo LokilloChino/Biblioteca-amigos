@@ -1,0 +1,216 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #F5F5F4;
+}
+
+.barra-nav img{
+    width: 30%;
+    height: 130vh;
+    background-color: #CDB8E9;
+    border-radius: 0 50px 50px 0;
+    padding: 80px;
+    font-size: 35px;
+}
+
+.barra-nav a{
+    display: block;
+    text-decoration: none;
+    color: black;
+    font-family: 'Inter';
+}
+
+.dashboard{
+    display: flex;
+}
+
+.panel{
+    flex: 1;
+    padding: 30px;
+}
+
+.panel h1{
+    font-size: 40px;
+    margin-top: 20px;
+}
+
+
+/* Logo */
+.logo img{
+    width: 380px;
+    height: 410px;
+    border-radius: 40px;
+    object-fit: cover;
+    margin-top: 95px;
+    margin-left: 30px;
+}
+
+/* Panel */
+.panel{
+    width: 500px;
+}
+
+/* Formulario */
+.contenedor-formulario{
+    background-color: #CDB8E9;
+    padding: 50px;
+    border-radius: 25px;
+}
+
+/* Título */
+h2{
+    text-align: center;
+    color: #091F5C;
+    margin-bottom: 40px;
+    font-size: 40px;
+}
+
+/* Formulario */
+form{
+    display: flex;
+    flex-direction: column;
+}
+
+label{
+    font-weight: bold;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    color: #091F5C;
+    font-size: 20px;
+}
+
+input{
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 12px;
+    outline: none;
+    font-size: 16px;
+}
+
+/* Botón principal */
+form button{
+    margin-top: 40px;
+    background-color: #DECFF1;
+    color: #091F5C;
+    border: none;
+    padding: 15px;
+    border-radius: 20px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+form button:hover{
+    background-color: #37c25ce6;
+    color: black;
+}
+
+.btn-login{
+    display: block;
+    text-align: center;
+    margin-top: 40px;
+    background-color: #DECFF1;
+    color: #091F5C;
+    text-decoration: none;
+    padding: 15px;
+    border-radius: 20px;
+    font-size: 20px;
+}
+
+/* Botones inferiores */
+.hola{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.hola a{
+    border: none;
+    background-color: #DECFF1;
+    color: #4b3f4f;
+    padding: 10px;
+    border-radius: 20px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+/* Nombre biblioteca */
+h1{
+    text-align: center;
+    margin-top: 50px;
+    color: #8b7a8b;
+    font-family: Vivaldi, cursive;
+    font-size: 32px;
+}
+
+/* TABLET */
+@media (max-width:768px){
+
+    .dashboard{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .logo img{
+        width: 300px;
+        height: 330px;
+        margin: 30px 0;
+    }
+
+    .panel{
+        width: 90%;
+        padding: 10px;
+    }
+
+    .hola{
+        gap: 20px; /* separa más los botones */
+    }
+
+    .hola a{
+        text-align: center;
+        flex: 1;
+    }
+}
+
+
+/* TELEFONO */
+@media (max-width:468px){
+
+    .dashboard{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .logo img{
+        width: 250px;
+        height: 300px;
+        margin: 20px 0;
+    }
+
+    .panel{
+        width: 100%;
+        padding: 15px;
+    }
+
+    .contenedor-formulario{
+        width: 100%;
+        padding: 25px;
+    }
+
+    h2{
+        font-size: 32px;
+    }
+
+    .hola{
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .hola a{
+        text-align: center;
+    }
+}
