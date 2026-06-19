@@ -1,19 +1,113 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Gestión de Docentes</title>
+    <link rel="stylesheet" href="gestion_docente.css">
 </head>
-<body>
-    
-<nav class="barra-nav">
-    <a href="panel.html">Panel</a>
-    <a href="gestion_prestamos.html">Gestión de Préstamo</a>
-    <a href="gestion_libros.html">Gestión de libros</a>
-    <a href="gestion_docentes.html">Gestión de Devoluciones</a>
-</nav>
 
+<body>
+
+<div class="dashboard">
+
+    <div class="barra-nav">
+
+        <!-- LOGO -->
+        <img src="carpeta-gali/logo.jpeg" alt="" class="logo">
+
+        <div class="icono">
+            <img src="carpeta-gali/home.png" alt="">
+            <a href="gestion_docentes.html">Gestión de Docentes</a>
+        </div>
+
+        <div class="icono">
+            <img src="carpeta-gali/prestamos.png" alt="">
+            <a href="gestion_prestamos.html">Gestión de Préstamo</a>
+        </div>
+
+        <div class="icono">
+            <img src="carpeta-gali/libro.png" alt="">
+            <a href="gestion_libros.html">Gestión de Libros</a>
+        </div>
+
+        <div class="icono">
+            <img src="carpeta-gali/devolucion.png" alt="">
+            <a href="gestion_devoluciones.html">Gestión de Devoluciones</a>
+        </div>
+
+    </div>
+
+    <div class="panel">
+
+        <h1>Gestión de Docentes</h1>
+
+        <div class="contenido">
+
+            <div class="acciones">
+                <button>Agregar Docente...</button>
+                <input type="text" placeholder="Buscar...">
+            </div>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Código</th>
+                        <th>Nombre</th>
+                        <th>Especialidad</th>
+                        <th>Teléfono</th>
+                        <th>Correo</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>DOC001</td>
+                        <td>Pedro García</td>
+                        <td>Matemáticas</td>
+                        <td>4578-9078</td>
+                        <td>pedro@gmail.com</td>
+                    </tr>
+
+                    <tr>
+                        <td>DOC002</td>
+                        <td>Juan Pérez</td>
+                        <td>Lenguaje</td>
+                        <td>2341-0987</td>
+                        <td>juan@gmail.com</td>
+                    </tr>
+
+                    <tr>
+                        <td>DOC003</td>
+                        <td>María López</td>
+                        <td>Ciencias</td>
+                        <td>5678-1234</td>
+                        <td>maria@gmail.com</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <div class="paginacion-contenedor">
+
+                <p class="mono">
+                    Mostrando de 1 a 3 de 25 Docentes
+                </p>
+
+                <div class="paginacion">
+                    <span>&lt;</span>
+                    <button>1</button>
+                    <button>2</button>
+                    <button>3</button>
+                    <span>&gt;</span>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
 
 </body>
 </html>
