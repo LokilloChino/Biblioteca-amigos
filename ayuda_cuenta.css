@@ -3,6 +3,154 @@
     padding: 0;
 }
 
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
 body{
-    background-color: #F5F5F4;
+    background: #d8eef7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.contenedor{
+    width: 700px;
+    background: #CDB8E9;;
+    border-radius: 30px;
+    padding: 40px;
+}
+
+h1{
+    font-size: 45px;
+    margin-bottom: 20px;
+}
+
+.correo{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    font-size: 30px;
+    margin-bottom: 35px;
+}
+
+.icono{
+    width: 55px;
+    height: 55px;
+    background: #1a73e8;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+}
+
+.flecha{
+    margin-left: auto;
+    font-size: 28px;
+}
+
+p{
+    font-size: 22px;
+    margin-bottom: 40px;
+    line-height: 1.4;
+}
+
+input{
+    width: 100%;
+    border: none;
+    border-bottom: 2px solid #999;
+    background: transparent;
+    padding: 12px 0;
+    font-size: 24px;
+    outline: none;
+}
+
+.botones{
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.botones a{
+    text-decoration: none;
+    color: #555;
+    font-size: 20px;
+}
+
+button{
+    background: #1a73e8;
+    color: white;
+    border: none;
+    padding: 12px 40px;
+    font-size: 22px;
+    cursor: pointer;
+}
+
+button:hover{
+    background: #1558b0;
+}
+
+/* ================= TABLET ================= */
+@media screen and (max-width: 768px){
+
+    .contenedor{
+        width: 90%;
+        padding: 30px;
+        margin: 30px auto;
+    }
+
+    h1{
+        font-size: 32px;
+    }
+
+    label{
+        font-size: 16px;
+    }
+
+    input,
+    select,
+    textarea{
+        font-size: 15px;
+    }
+}
+
+/* ================= TELEFONO ================= */
+@media screen and (max-width: 480px){
+
+    .contenedor{
+        width: 95%;
+        padding: 20px;
+        margin: 20px auto;
+    }
+
+    h1{
+        font-size: 26px;
+    }
+
+    label{
+        font-size: 15px;
+    }
+
+    input,
+    select,
+    textarea{
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    textarea{
+        height: 130px;
+    }
+
+    button{
+        font-size: 16px;
+        padding: 12px;
+    }
 }

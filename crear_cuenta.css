@@ -3,6 +3,165 @@
     padding: 0;
 }
 
+
 body{
-    background-color: #F5F5F4;
+    padding: 20px;
+    background-color: white;
+    width: 1260px;
+    overflow-x: hidden;
+
+}
+
+.tarjeta{
+    width: 100%;
+    height: 100vh;
+    background-color: #CDB8E9;
+    border-radius: 20px;
+    margin: 10px;
+    margin-right: 10px;
+    padding: 10px;
+    font-size: 40px;
+    box-shadow: 10px 10px 10px grey;
+}
+
+input{
+    width: 22%;
+    height: 40px;
+    border-radius: 15px;
+    box-shadow: 10px 10px 10px grey;
+    margin: 10px;
+}
+
+.usuario input{
+    width: 47%;
+    height: 40px;
+    box-shadow: 10px 10px 10px grey;
+}
+
+p{
+    font-size: 18px;
+    color: gray;
+    
+}
+
+h6{
+    color: gray;
+    text-align: center;
+    font-size: 23px;
+}
+
+header p{
+    color: blue;
+    font-size: 20px;
+    padding: 10px;
+}
+
+.contraseña input{
+    width: 22%;
+    height: 40px;
+    box-shadow: 10px 10px 10px grey;
+}
+
+p{
+    font-size: 18px;
+    color: gray;
+    margin: 5px;
+}
+
+.mostrar{
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+input[type="checkbox"]{
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+}
+
+button{
+    background-color: rgb(27, 27, 235);
+    color: white;
+    margin-left: 500px;
+    margin-top: 1px;
+    border-radius: 10px;
+    box-shadow: 10px 10px 20px black; 
+    width: 8%;
+    height: 6vh;
+}
+
+button:hover{
+    background-color: blue;
+}
+
+.imagen{
+    position: absolute;
+    left: 60%;
+    bottom: 10%;
+    width: 350px;
+}
+
+.imagen img{
+    width: 90%;
+    height: auto;
+}
+
+/* ================= TABLET ================= */
+@media screen and (max-width: 768px){
+
+    .contenedor{
+        width: 90%;
+        padding: 30px;
+        margin: 30px auto;
+    }
+
+    h1{
+        font-size: 32px;
+    }
+
+    label{
+        font-size: 16px;
+    }
+
+    input,
+    select,
+    textarea{
+        font-size: 15px;
+    }
+}
+
+/* ================= TELEFONO ================= */
+@media screen and (max-width: 480px){
+
+    .contenedor{
+        width: 100%;
+        padding: 20px;
+        margin: 20px auto;
+    }
+
+    h1{
+        font-size: 26px;
+    }
+
+    label{
+        font-size: 15px;
+    }
+
+    input,
+    select,
+    textarea{
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    textarea{
+        height: 130px;
+    }
+
+    button{
+        font-size: 16px;
+        padding: 12px;
+    }
 }
